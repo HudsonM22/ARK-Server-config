@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark Server Config</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/reuleaux.js"></script>
+</head>
+<body>
+    <div id="header"><h2>Ark Server Config</h2></div>
+    <div id="server-control">
+        <div id="server-run">
+            <button id="start-server">Start Server</button>
+            <button id="stop-server">Stop Server</button>
+        </div>
+        <button id="save-settings" >Save Settings</button>
+        <div id="command-wrapper">
+            <input id="send-command" type="text" placeholder="Send_Command">
+            <button id="send-command-button">-></button>
+        </div>
+    </div>
+    <div id="content-wrapper">
+        <div id="content-header">
+            <div class="custom_input">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+                <input class="input" type="text" placeholder="Search_Setting" id="search-box">
+            </div>
+        </div>
+        <div id="settings-list">
+            
+        </div>
+    </div>
+    <script defer src="ark.js"></script>
+</body>
+</html>
